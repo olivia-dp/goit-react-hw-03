@@ -6,8 +6,8 @@ const SearchBox = ({ searchValue, onSearchChange }) => {
     return (
         <>
         <label className={s.label}>
-          <span>Find contacts by name:</span>
-                <input className={s.input} type='text' value={searchValue} onChange = {(e) => onSearchChange(e.target.value)} />
+          <span className={s.span}>Find contacts by name:</span>
+                <input className={s.input} type='text' value={searchValue} onChange={(e) => onSearchChange(e.target.value)} className={s.input} />
         </label>
         </>
     )
